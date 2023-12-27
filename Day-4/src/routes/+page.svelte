@@ -32,8 +32,6 @@
     const interval = setInterval(fetchData, 5000);
 
     fetchData();
-
-    // Clear the interval on component destruction
     return () => clearInterval(interval);
   });
 
@@ -63,7 +61,7 @@
             },
             y: {
               min: 0,
-              max: 200, // Adjust the maximum value based on your data
+              max: 200,
             },
           },
         },
